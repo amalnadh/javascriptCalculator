@@ -1,0 +1,91 @@
+
+<html>
+  <head>
+   <title>Calculator In Javascript With Bootstrap 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css" />
+   <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="row mt-5">
+      <div class="col-md-12 d-flex justify-content-center">
+        <form name="Cal">
+          <div class="row ">
+            <div class="col-md-12 p-0">
+              <div class="form-group">
+                <textarea class="form-control" rows="3" id="total" type="text" name="ans"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">
+              <button type="button" class="btn" onclick="Cal.ans.value += '1'">1</button>
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn" onclick="Cal.ans.value += '2'">2</button>
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn" onclick="Cal.ans.value += '3'">3</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">
+              <button type="button" class="btn" onclick="Cal.ans.value += '4'">4</button>
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn" onclick="Cal.ans.value += '5'">5</button>
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn" onclick="Cal.ans.value += '6'">6</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">
+              <button type="button" class="btn" onclick="Cal.ans.value += '7'">7</button>
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn" onclick="Cal.ans.value += '8'">8</button>
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn" onclick="Cal.ans.value += '9'">9</button>	
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">
+              <button type="button" class="btn" id="add" onclick="Cal.ans.value += '+'">+</button>	
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn" onclick="Cal.ans.value += '0'">0</button>	
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn" id="sub" onclick="Cal.ans.value += '-'">-</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">
+              <button type="button" class="btn" id="div" onclick="Cal.ans.value += '/'">/</button>
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn" id="mul" onclick="Cal.ans.value += '*'">*</button>
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn" id="backsp" onclick="backspace()">⟵</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 p-0">
+              <button type="button" class="btn" id="SUM" onclick=" Cal.ans.value = eval(Cal.ans.value)">=</button>
+            </div>
+            <div class="col-xs-6 p-0">
+              <button type="button" class="btn" id="clears" onclick="clearscreen()">CE</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+   
+  </body>
+</html>
